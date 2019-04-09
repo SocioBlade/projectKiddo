@@ -24,17 +24,26 @@
     <ClCompile Include="GameState.cpp">
       <Filter>Resource Files\Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="shader.cpp">
+      <Filter>Resource Files\Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fileutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\VS.glsl">
+    <None Include="FS.glsl">
       <Filter>Resource Files\ShaderFiles</Filter>
     </None>
-    <None Include="..\FS.glsl">
+    <None Include="VS.glsl">
       <Filter>Resource Files\ShaderFiles</Filter>
     </None>
   </ItemGroup>
