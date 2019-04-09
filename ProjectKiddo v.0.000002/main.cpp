@@ -6,15 +6,18 @@
 #include "glm.hpp"
 #include "ext.hpp"
 
+#include "GameState.h"
+
 
 int main(void)
 {
 	GLFWwindow* window;
+	GameState game;
 
 	/* Initialize the library */
 	if (!glfwInit())
 		return -1;
-	glm::vec3 vec = { 1.0,1.0,1.0 };
+	
 	/* Create a windowed mode window and its OpenGL context */
 	window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
 	if (!window)
@@ -30,15 +33,8 @@ int main(void)
 	while (!glfwWindowShouldClose(window))
 	{
 		/* Render here */
-		glClear(GL_COLOR_BUFFER_BIT);
-
-		glBegin(GL_TRIANGLES);
-
-		glVertex2f(-0.5, -0.5);
-		glVertex2f(0.0, 0.5);
-		glVertex2f(0.5,	-0.5);
-
-		glEnd();
+		game.draw(); //This is a basic openGL draw call - no shaders implemented
+		
 
 		/* Swap front and back buffers */
 		glfwSwapBuffers(window);
