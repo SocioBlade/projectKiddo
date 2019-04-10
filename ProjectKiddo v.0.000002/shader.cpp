@@ -41,6 +41,11 @@ void engineTest::graphics::Shader::setUniformMat4(const GLchar * name, const glm
 	glUniformMatrix4fv(_getUniformLocation(name), 1, GL_FALSE, glm::value_ptr(matrix));
 }
 
+GLuint engineTest::graphics::Shader::getShaderID()
+{
+	return this->m_ShaderID;
+}
+
 void engineTest::graphics::Shader::enable() const
 {
 	glUseProgram(m_ShaderID);

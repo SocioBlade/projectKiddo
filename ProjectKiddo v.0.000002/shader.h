@@ -33,7 +33,7 @@ namespace engineTest {
 			void setUniform4f(const GLchar* name, const glm::vec4& vector);
 			void setUniformMat4(const GLchar* name, const glm::mat4& matrix);
 
-
+			GLuint getShaderID();
 
 			void enable() const;
 			void disable() const;
