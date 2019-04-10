@@ -4,9 +4,9 @@
 
 GameState::GameState()
 {
-	this->triPos1 = glm::vec2(-0.5, -0.5);
+	/*this->triPos1 = glm::vec2(-0.5, -0.5);
 	this->triPos2 = glm::vec2( 0.0,	 0.5);
-	this->triPos3 = glm::vec2( 0.5, -0.5);
+	this->triPos3 = glm::vec2( 0.5, -0.5);*/
 }
 
 
