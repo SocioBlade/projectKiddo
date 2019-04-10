@@ -92,8 +92,8 @@ void Window::clear() const
 }
 
 //#####################################//
-// Update function that handles glfw's //
-// poll and swap buffers.              //
+// Getter that returns the width of    //
+// the window.	                       //
 //#####################################//
 int Window::getWidth() const
 {
@@ -101,8 +101,8 @@ int Window::getWidth() const
 }
 
 //#####################################//
-// Update function that handles glfw's //
-// poll and swap buffers.              //
+// Getter that returns the height of   //
+// the window.                         //
 //#####################################//
 int Window::getHeight() const
 {
